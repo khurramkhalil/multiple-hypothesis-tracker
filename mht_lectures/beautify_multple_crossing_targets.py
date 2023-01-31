@@ -1,12 +1,14 @@
 import numpy as np
 import plotly.graph_objects as go
 
+val = 5000
+
 
 def curve(length):
     poly_coefs = [4, 3, 2, 1]
 
     x_vals = np.linspace(-40, 40, length)
-    y_vals = np.polyval(poly_coefs, x_vals) / 3000
+    y_vals = np.polyval(poly_coefs, x_vals) / val
 
     reading = np.vstack((x_vals, y_vals))
     reading = reading.T
@@ -18,7 +20,7 @@ def flip_curve(length):
     poly_coefs = [4, 3, 2, 1]
 
     x_vals = np.linspace(-40, 40, length)
-    y_vals = np.polyval(poly_coefs, x_vals) / 3000  # - 10
+    y_vals = np.polyval(poly_coefs, x_vals) / val - 10
     x_vals = np.linspace(40, -40, length)
 
     reading = np.vstack((x_vals, y_vals))
@@ -38,11 +40,11 @@ if __name__ == "__main__":
         paths.append(path)
 
     # Separate each axis data
-    x_coord_0 = [x[0] for x in paths[0]]
-    y_coord_0 = [x[1] for x in paths[0]]
+    x_coord_0 = [x[0] + 40 for x in paths[0]]
+    y_coord_0 = [x[1] + 60 for x in paths[0]]
 
-    x_coord_1 = [x[0] for x in paths[1]]
-    y_coord_1 = [x[1] for x in paths[1]]
+    x_coord_1 = [x[0] + 40 for x in paths[1]]
+    y_coord_1 = [x[1] + 60 for x in paths[1]]
 
     # Initialize Plotly Fig object
     fig = go.Figure()

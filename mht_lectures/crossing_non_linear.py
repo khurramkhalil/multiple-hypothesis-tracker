@@ -30,7 +30,6 @@ def flip_curve(length):
 if __name__ == "__main__":
     duration = 100
     dims = 2
-    num_targets = 3
     possible_track_trajectories = [curve, flip_curve]
     paths = np.empty((0, dims))
     for target_path in possible_track_trajectories:
