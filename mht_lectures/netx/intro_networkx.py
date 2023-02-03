@@ -1,6 +1,5 @@
-import networkx as nx
-import plotly.graph_objects as go
 import matplotlib.pyplot as plt
+import networkx as nx
 
 # Create an empty graph
 G = nx.Graph()

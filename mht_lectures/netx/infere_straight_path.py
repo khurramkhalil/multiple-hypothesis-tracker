@@ -1,7 +1,7 @@
-import numpy as np
-import plotly.graph_objects as go
-import networkx as nx
 import math
+
+import networkx as nx
+import numpy as np
 
 
 def x_align(length, offset):
@@ -52,4 +52,3 @@ if __name__ == "__main__":
                 G.add_edge(len(G.nodes) - 1, len(G.nodes) - 2)
 
         print(time_, j)
-
