@@ -1,0 +1,59 @@
+Q1: What is the main advantage of using Multiple Hypothesis Tracker (MHT) over Single Hypothesis Tracker (SHT)?
+a) Higher accuracy in tracking
+b) Faster computation time
+c) Easier implementation
+d) Requires less memory
+
+Q2: Which of the following describes the goal of the MHT algorithm?
+a) To track the position of a single target
+b) To track the position of multiple targets in a cluttered environment
+c) To minimize the computation time required for tracking
+d) To maximize the tracking range of a single sensor
+
+Q3: What is a hypothesis in the context of the MHT algorithm?
+a) A proposed solution to a problem
+b) A predicted state of a target
+c) A measurement obtained from a sensor
+d) A representation of the environment
+
+Q4: Which of the following is a limitation of the MHT algorithm?
+a) It can only track a fixed number of targets
+b) It cannot handle cluttered environments
+c) It is not suitable for real-time applications
+d) It requires a large amount of memory to store hypotheses
+
+Q5: What is the main factor that determines the number of hypotheses to be maintained in the MHT algorithm?
+a) The number of targets in the environment
+b) The processing power of the computer
+c) The complexity of the measurement model
+d) The level of noise in the measurements
+
+Q6: What is the goal of the MHT algorithm?
+a) To segment objects in a cluttered environment
+b) To detect multiple objects in a cluttered environment
+c) To track multiple objects in a cluttered environment
+d) None of the above
+
+Q7: What are the two types of hypotheses in MHT?
+a) True and False
+b) Good and Bad
+c) Valid and Invalid
+d) Alive and Dead
+
+Q8: How does MHT handle data association?
+a) By assigning each measurement to a single object
+b) By maintaining multiple hypotheses for each measurement-object association
+c) By discarding uncertain measurements
+d) By using a single hypothesis for each object
+
+Q9: What is the importance of track management in MHT?
+a) It helps to reduce the computational complexity
+b) It helps to maintain the integrity of the tracks
+c) It helps to prevent track fragmentation
+d) All of the above
+
+Q10: How can MHT be used in robotics?
+a) For object detection
+b) For object tracking
+c) For simultaneous localization and mapping (SLAM)
+d) All of the above
